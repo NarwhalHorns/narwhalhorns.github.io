@@ -1,8 +1,8 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'jammas-1';
 var urlsToCache = [
   '/',
-  '/styles/main.css',
-  '/script/main.js'
+  '/styles/styles.css',
+  '/scripts/main.js'
 ];
 
 self.addEventListener('install', function(event) {
@@ -52,7 +52,7 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
 
-  var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
+  var cacheWhitelist = ['jammas-final'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
