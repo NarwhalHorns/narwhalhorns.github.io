@@ -5,17 +5,30 @@
     <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    <h1>James Mason</h1>
-    <h2>Boi</h2>
+    <main>
+      <h1>James Mason</h1>
+
+      <p>I'm me and I do things, like this and that. Isn't that cool</p>
+
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="./projects/project.html">This is one</a></li>
+        <li><a>This is another</a></li>
+      </ul>
+    </main>
     <footer>
-      <h4 id="copy"></h4>
+      <ul>
+        <li>Contacts</li>
+        <li>jamestmason1997@gmail.com</li>
+      </ul>
+      <p id="copy"></p>
     </footer>
 
 
     <script type="text/javascript">
       var today = new Date();
       var year = today.getFullYear();
-      document.getElementById('copy').innerHTML = 'James Mason &copy;' + year;
+      document.getElementById('copy').innerHTML = 'James Mason &copy; ' + year;
     </script>
   </body>
 </html>
