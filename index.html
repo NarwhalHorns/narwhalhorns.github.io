@@ -8,7 +8,14 @@
     <h1>James Mason</h1>
     <h2>Boi</h2>
     <footer>
-      <h4>Boi</h4>
+      <h4 id="copy"></h4>
     </footer>
+
+
+    <script type="text/javascript">
+      var today = new Date();
+      var year = today.getFullYear();
+      document.getElementById('copy').write('James Mason &copy;' + year);
+    </script>
   </body>
 </html>
