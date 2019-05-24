@@ -4,17 +4,38 @@ html
   font-family: 'Open Sans', sans-serif
   // font-size: 120%
 
-main
-  background-color: red
+nav, footer, #logo
+  display: flex
+  justify-content: center
 
 //-------------- Header --------------
 
 header
-  background-color: green
+  background-color: #2C8C99
+  padding: 1em
+
+#logo
+  margin-bottom: 1em
+
+#social
+  margin-bottom: 1em
+  a
+    color: black
+    ~ a
+      margin-left: 10px
+    &:hover
+      color: pink
+
+//-------------- Content --------------
+
+main
+  background-color: #42D9C8
+  padding: 2em
 
 //-------------- Projects ------------------
 
 .project
+  border: 1em
 
 .project-name
 
@@ -31,19 +52,5 @@ header
 //-------------- Footer ------------------
 
 footer
+  padding: 0.5em
   background-color: slategray
-  padding: 5px
-
-footer > nav
-  margin-left: 25%
-  width: 50%
-  display: flex
-  justify-content: center
-  a
-    color: black
-    ~ a
-      margin-left: 10px
-    &:hover
-      color: pink
-
-#copy
