@@ -2,36 +2,43 @@
 
 <a id="blog-link" href="./blog">Blog</a>
 
-<div id="pream">
-  {{ content }}
+<div id="about">
+  <div id="pream">
+    {{ content }}
+  </div>
+
+  <section id="play">
+    <h2 class="title">Play</h2>
+    <ul class="list">
+      <li><i class="fab fa-youtube"></i><div class="name">Youtube</div></li>
+      <li><i class="fab fa-playstation"></i><div class="name">PS</div></li>
+      <li><i class="fab fa-nintendo-switch"></i><div class="name">Switch</div></li>
+      <li><i class="fab fa-d-and-d"></i><div class="name">DnD</div></li>
+      <li><i class="fab fa-steam"></i><div class="name">Steam</div></li>
+      <li><i class="fab fa-reddit-alien"></i><div class="name">Reddit</div></li>
+      <li><i class="fas fa-film"></i><div class="name">Film</div></li>
+    </ul>
+  </section>
+
+  <section id="work">
+    <h2 class="title">Work</h2>
+    <ul class="list">
+      <li><div class="name">HTML</div><i class="fab fa-html5"></i></li>
+      <li><div class="name">JavaScript</div><i class="fab fa-js"></i></li>
+      <li><div class="name">Sass</div><i class="fab fa-xs fa-sass"></i></li>
+      <li><div class="name">Bootstrap</div><i class="fab fa-bootstrap"></i></li>
+      <li><div class="name">Java</div><i class="fab fa-java"></i></li>
+      <li><div class="name">Python</div><i class="fab fa-python"></i></li>
+    </ul>
+  </section>
 </div>
-
-<ul id="tools" class="background">
-  <li>HTML</li>
-  <li>Javascript</li>
-  <li>Sass</li>
-  <li>Bootstrap</li>
-  <li>Java</li>
-  <li>Python</li>
-  <li>C++</li>
-</ul>
-
-<ul id="hobbies" class="background">
-  <li><i class="fab fa-2x fa-youtube"></i></li>
-  <li><i class="fab fa-2x fa-playstation"></i></li>
-  <li><i class="fab fa-2x fa-nintendo-switch"></i></li>
-  <li><i class="fab fa-2x fa-d-and-d"></i></li>
-  <li><i class="fab fa-2x fa-steam"></i></li>
-  <li><i class="fab fa-2x fa-reddit-alien"></i></li>
-  <li><i class="fas fa-2x fa-film"></i></li>
-</ul>
 
 <div id="projects">
   {% for project in site.projects %}
     <div class="project" style="background-image: url(./assets/images/{{ project.image }})">
       <div class="content">
-        <div class="name">{{ project.name }}</div>
-        <div class="desc">{{ project.content }}</div>
+        <h3 class="name">{{ project.name }}</h3>
+        <div class="desc"><p>{{ project.content }}</p></div>
       </div>
     </div>
   {% endfor %}
