@@ -1,11 +1,15 @@
 @import reset.sass
 
+$back-color: #F4F6F7
+
+// ---------------------------------
+
 html
   font-family: 'Open Sans', sans-serif
   // font-size: 120%
 
 body
-  background-color: #F4F6F7
+  background-color: $back-color
 
 nav, footer, #logo
   display: flex
@@ -70,41 +74,45 @@ a
   flex-wrap: wrap
   justify-content: center
 
+$project-width: 15em
+$project-height: 10em
+$project-padding: 1em
+
 .project
+  background-color: $back-color
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-  background-color: #F4F6F7
   background-size: cover
-  width: 15em
-  height: 10em
   border-color: black
   border-style: solid
   border-width: 2px
-  text-align: center
-  margin: 1em
-  line-height: 10em
   border-radius: 0.75em
+  margin: 1em
+  position: relative
+  width: $project-width
+  height: $project-height
   .content
-    display: inline-block
+    text-align: center
+    padding: $project-padding
+    width: calc(100% - (2 * #{$project-padding}))
+    height: calc(100% - (2 * #{$project-padding}))
+    border-radius: 0.75em
+    line-height: calc(#{$project-height} - (2 * #{$project-padding}))
+  .desc, .name
     vertical-align: middle
     line-height: normal
-    .name
-      font-size: 1.5em
-    .desc
-      display: none
-    .cover
-      padding: 1em
-      height: 100%
-      opacity: 0
-      background-color: lightpink
+  .name
+    display: inline-block
+    font-size: 1.5em
+  .desc
+    display: none
   &:hover
     .content
-      .cover
-        opacity: 0.5
-      .name
-        display: none
-      .desc
-        opacity: 1
-        display: inline-block
+      opacity: 0.4
+      background-color: lightpink
+    .desc
+      display: inline-block
+    .name
+      display: none
 
 //-------------- Blog ------------------
 
