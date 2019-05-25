@@ -4,46 +4,114 @@ html
   font-family: 'Open Sans', sans-serif
   // font-size: 120%
 
+body
+  background-color: #F4F6F7
+
 nav, footer, #logo
   display: flex
   justify-content: center
 
 //-------------- Header --------------
 
-header
-  background-color: #2C8C99
-  padding: 1em
+#blog-link, #home-link
+  margin: 2em
+  position: fixed
+  top: 0
+
+#blog-link
+  right: 0
 
 #logo
-  margin-bottom: 1em
+  margin-top: 0.5em
+  margin-bottom: 0.5em
+  font-size: 4em
 
 #social
-  margin-bottom: 1em
+  margin-bottom: 2em
   a
-    color: black
     ~ a
-      margin-left: 10px
+      margin-left: 20px
     &:hover
-      color: pink
+      color: lightpink
+
+a
+  color: black
+  text-decoration: none
 
 //-------------- Content --------------
 
-main
-  background-color: #42D9C8
-  padding: 2em
+
+
+//-------------- Index --------------
+
+.background
+  font-size: 2em
+  position: fixed
+  color: lightpink
+  z-index: -1
+  opacity: 0.7
+
+#tools
+  right: 1.5em
+
+#hobbies
+  margin-left: 1.5em
+
+#pream
+  display: flex
+  justify-content: center
+  margin-bottom: 1em
 
 //-------------- Projects ------------------
 
+#projects
+  display: flex
+  align-content: space-around
+  flex-wrap: wrap
+  justify-content: center
+
 .project
-  border: 1em
-
-.project-name
-
-.project-desc
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  background-color: #F4F6F7
+  background-size: cover
+  width: 15em
+  height: 10em
+  border-color: black
+  border-style: solid
+  border-width: 2px
+  text-align: center
+  margin: 1em
+  line-height: 10em
+  border-radius: 0.75em
+  .content
+    display: inline-block
+    vertical-align: middle
+    line-height: normal
+    .name
+      font-size: 1.5em
+    .desc
+      display: none
+    .cover
+      padding: 1em
+      height: 100%
+      opacity: 0
+      background-color: lightpink
+  &:hover
+    .content
+      .cover
+        opacity: 0.5
+      .name
+        display: none
+      .desc
+        opacity: 1
+        display: inline-block
 
 //-------------- Blog ------------------
 
+#blog
+
 .post
+  width: 70%
 
 .post-title
 
@@ -53,4 +121,4 @@ main
 
 footer
   padding: 0.5em
-  background-color: slategray
+  background-color: #E5E7E9
