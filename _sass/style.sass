@@ -57,6 +57,12 @@ $section-title: 5rem
   margin-bottom: 2rem
   position: relative
   section
+    height: 100%
+    width: $section-title
+    border: 2px solid lightpink
+    background-color: white
+    border-radius: 1rem
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
     display: inline-block
     font-size: $token-size
     color: lightpink
@@ -64,6 +70,7 @@ $section-title: 5rem
       position: absolute
       text-align: center
       font-size: $section-title
+      // text-shadow: 2px 2px 2px black
     .list
       text-align: center
       opacity: 0
@@ -96,12 +103,13 @@ $section-title: 5rem
 #work
   position: absolute
   right: 0
-  margin-top: calc(#{$token-size} * 0.75)
   margin-right: 1rem
+  .list, .title
+    margin-top: calc(#{$token-size} * 0.75)
   .title
     transform-origin: top right
     width: calc(#{$token-size} * 6 + 5rem)
-    transform: rotate(-90deg) translate(0, calc(#{$token-size} * -6 - 5rem - 1.25rem))
+    transform: rotate(-90deg) translate(0, calc(#{$token-size} * -6 - 5rem ))
   .name
     right: $section-title
 
