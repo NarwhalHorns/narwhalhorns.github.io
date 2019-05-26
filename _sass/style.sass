@@ -52,6 +52,39 @@ a
 
 //-------------- About --------------
 
+@-webkit-keyframes disappearWork
+  0%
+    left: 0
+    opacity: 1
+  100%
+    left: -2rem
+    opacity: 0
+
+
+@-webkit-keyframes disappearPlay
+  0%
+    left: 0
+    opacity: 1
+  100%
+    left: 2rem
+    opacity: 0
+
+@-webkit-keyframes appearWork
+  0%
+    left: -2rem
+    opacity: 0
+  100%
+    left: 0
+    opacity: 1
+
+@-webkit-keyframes appearPlay
+  0%
+    left: 2rem
+    opacity: 0
+  100%
+    left: 0
+    opacity: 1
+
 #about
   margin-top: 2rem
   .menu
@@ -60,9 +93,11 @@ a
     color: lightpink
     position: relative
     h2
+      transition: opacity 0.5s, transform 0.5s
       font-size: 5rem
       position: absolute
     ul
+      transition: opacity 0.5s, transform 0.5s
       opacity: 0
       text-align: center
       font-size: 4rem
@@ -75,14 +110,6 @@ a
           font-size: 2rem
           position: absolute
           display: none
-        &:hover
-          p
-            display: inline-block
-    &:hover
-      h2
-        opacity: 0
-      ul
-        opacity: 1
 
 #work
   bottom: 2.5rem
@@ -91,6 +118,13 @@ a
     transform: rotate(-90deg) translate(calc(4rem * -3 + 1rem * -2.5 - 50%), 0)
   p
     margin-left: 1rem
+  &:hover
+    h2
+      opacity: 0
+      -webkit-transform: rotate(-90deg) translate(calc(4rem * -3 + 1rem * -2.5 - 50%), -2rem)
+    ul
+      opacity: 1
+      -webkit-transform: translate(0, 0)
 
 #play
   position: absolute
@@ -100,6 +134,13 @@ a
     transform: rotate(90deg) translate(calc(4rem * 2.5 + 1rem * 2 - 50%), 0)
   p
     right: calc(100% + 1rem)
+  &:hover
+    h2
+      opacity: 0
+      -webkit-transform: rotate(90deg) translate(calc(4rem * 2.5 + 1rem * 2 - 50%), -2rem)
+    ul
+      opacity: 1
+      -webkit-transform: translate(0, 0)
 
 #pream
   font-size: 1.25rem
