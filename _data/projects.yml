@@ -1,0 +1,20 @@
+---
+- website:
+  name: My Website
+  image: website.png
+  desc: The very site you're on!
+
+- timemap:
+  name: Time Map
+  desc: My dissertation project. A mapping software which implemented time changing the maps.
+
+- croasdale:
+  name: Secret Site Project
+  image: secret.jpg
+  desc: A site I'm working on that is yet to be revealed...
+
+- airpiano:
+  name: Air Piano
+  image: piano.gif
+  desc: An invisible piano you play in the air.
+...

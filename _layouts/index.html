@@ -1,7 +1,5 @@
 {% include header.html %}
 
-<a id="blog-link" href="./blog">Blog</a>
-
 <div id="pream">
   {{ content }}
 </div>
@@ -38,13 +36,8 @@
 </div>
 
 <section id="projects">
-  {% for project in site.projects %}
-    <div class="project" style="background-image: url(./assets/images/{{ project.image }})">
-      <div>
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.content }}</p>
-      </div>
-    </div>
+  {% for project in site.data.projects %}
+    {% include project.html project=project %}
   {% endfor %}
 </section>
 

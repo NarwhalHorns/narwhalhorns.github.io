@@ -1,0 +1,10 @@
+{% if project.image %}
+  <div class="project" style="background-image: url(./assets/images/{{ project.image }})">
+{% else %}
+  <div class="project">
+{% endif %}
+    <div>
+      <h3>{{ project.name }}</h3>
+      <p>{{ project.desc }}</p>
+    </div>
+  </div>

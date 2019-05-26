@@ -1,8 +1,9 @@
-var CACHE_NAME = 'jammas-1';
+var CACHE_NAME = 'jammas';
 var urlsToCache = [
   '/',
-  '/styles/styles.css',
-  '/scripts/main.js'
+  '/assets/styles/style.css',
+  '/assets/scripts/main.js',
+  'https://use.fontawesome.com/releases/v5.8.2/css/all.css',
 ];
 
 self.addEventListener('install', function(event) {
@@ -52,7 +53,7 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
 
-  var cacheWhitelist = ['jammas-final'];
+  var cacheWhitelist = ['jammas'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {

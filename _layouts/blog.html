@@ -2,13 +2,13 @@
 
 <a id="home-link" href="./">Home</a>
 
-<div id="blog">
+<section id="blog">
   {% for post in site.posts %}
     <div class="post">
       <div class="post-title">{{ post.title }}</div>
       <div class="post-content">{{ post.content }}</>
     </div>
   {% endfor %}
-</div>
+</section>
 
 {% include footer.html %}
