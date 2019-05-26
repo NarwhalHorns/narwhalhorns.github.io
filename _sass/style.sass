@@ -22,16 +22,20 @@ nav, footer, #logo
   display: flex
   justify-content: center
 
+#wrapper
+  margin: auto
+  position: relative
+  max-width: 1000px
+
 //-------------- Header --------------
 
 #blog-link, #home-link
   position: absolute
-  margin-top: 2rem
-  margin-left: 1rem
+  margin-top: 1rem
   top: 0
 
 #blog-link
-  margin-right: 2rem
+  margin-right: 1rem
   right: 0
 
 #logo
@@ -110,6 +114,9 @@ a
           font-size: 2rem
           position: absolute
           display: none
+        &:hover
+          p
+            display: inline-block
 
 #work
   bottom: 2.5rem
