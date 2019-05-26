@@ -2,36 +2,40 @@
 
 <a id="blog-link" href="./blog">Blog</a>
 
-<section id="about">
-  <div id="pream">
-    {{ content }}
-  </div>
+<div id="pream">
+  {{ content }}
+</div>
 
-  <div id="work" class="menu">
+<div id="about">
+  <section id="work" class="about">
+    <div class="backboard"></div>
     <h2>Work</h2>
+    <p class="details">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     <ul>
-      <li><a><i class="fab fa-html5"></i></a><p>HTML</p></li>
-      <li><a><i class="fab fa-js"></i></a><p>JavaScript</p></li>
-      <li><a><i style="margin-bottom: 0.75rem" class="fab fa-xs fa-sass"></i></a><p>Sass</p></li>
-      <li><a><i class="fab fa-bootstrap"></i></a><p>Bootstrap</p></li>
-      <li><a><i class="fab fa-java"></i></a><p>Java</p></li>
-      <li><a><i class="fab fa-python"></i></a><p>Python</p></li>
+      <li><p>HTML</p><i class="fab fa-html5"></i></li>
+      <li><p>JavaScript</p><i class="fab fa-js"></i></li>
+      <li><p class="sass">Sass</p><i style="margin-bottom: 0.75rem" class="fab fa-xs fa-sass"></i></li>
+      <li><p>Bootstrap</p><i class="fab fa-bootstrap"></i></li>
+      <li><p>Java</p><i class="fab fa-java"></i></li>
+      <li><p>Python</p><i class="fab fa-python"></i></li>
     </ul>
-  </div>
+  </section>
 
-  <div id="play" class="menu">
+  <section id="play" class="about">
+    <div class="backboard"></div>
     <h2>Play</h2>
+    <p class="details">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     <ul>
-      <li><p>Youtube</p><a><i class="fab fa-youtube"></i></a></li>
-      <li><p>PS</p><a><i class="fab fa-playstation"></i></a></li>
-      <li><p>Switch</p><a><i class="fab fa-nintendo-switch"></i></a></li>
-      <li><p>DnD</p><a><i class="fab fa-d-and-d"></i></a></li>
-      <li><p>Steam</p><a><i class="fab fa-steam"></i></a></li>
-      <li><p>Reddit</p><a><i class="fab fa-reddit-alien"></i></a></li>
-      <li><p>Film</p><a><i class="fas fa-film"></i></a></li>
+      <li><i class="fab fa-youtube"></i><p>Youtube</p></li>
+      <li><i class="fab fa-playstation"></i><p>PlayStation</p></li>
+      <li><i class="fab fa-nintendo-switch"></i><p>Switch</p></li>
+      <li><i class="fab fa-d-and-d"></i><p>DnD</p></li>
+      <li><i class="fab fa-steam"></i><p>Steam</p></li>
+      <li><i class="fab fa-reddit-alien"></i><p>Reddit</p></li>
+      <li><i class="fas fa-film"></i><p>Films</p></li>
     </ul>
-  </div>
-</section>
+  </section>
+</div>
 
 <section id="projects">
   {% for project in site.projects %}
