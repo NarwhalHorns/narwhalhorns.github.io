@@ -1,7 +1,0 @@
-timezone: Europe/London
-
-collections:
-  posts:
-    output: false
-
-exclude: [blog.md]
