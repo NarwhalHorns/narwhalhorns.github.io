@@ -1,41 +1,65 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: #FFE8F8;
+    text-align: center;
 }
 
-a {
-    color: inherit;
-}
-
-h1, .card-title, .section-title {     
+.name, .card-title {     
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    font-size: 5em;
-    text-align: center;
+.name {
+    margin-top: 1em;
+    font-size: 6em;
+}
+
+.contacts {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+.contacts li {
+    display: inline;
+}
+
+.contacts li+li {
+    margin-left: 1em;
+}
+
+a {
+    color: #D5FFCF;
+    text-shadow: 1px 1px 1px #77B36D;
+ }
+ 
+ a:hover {
+     color: #77B36D;
+     text-shadow: none;
+ }
+
+ .about {
+    width: 60%;
+    font-size: 1.5em;
+    margin-left: 20%;
+    margin-bottom: 3em;
+}
+
+.projects {
+    margin-left: 12.5vw;
+    max-width: 75vw;
 }
 
 .card-container {
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 2em
 }
 
 .card {
-    width: 75%;
-    margin-left: 12.5%;
-    text-align: center;
-    box-shadow: 1px 1px 1px grey;
-}
-
-.card-icon {
-    padding: 1em;
-}
-
-.card-title {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    box-shadow: 1px 1px 1px #B37FA3;
+    background-color: #FFCFF0;
 }
 
 .card-image {
@@ -46,19 +70,7 @@ h1 {
     padding: 0.5em;
 }
 
-.about {
-    display: grid;
-    gap: 5%;
-    padding: 5%;
-    grid-template-columns: 1fr 1fr;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 3em;
-}
-
-.contacts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.card-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
