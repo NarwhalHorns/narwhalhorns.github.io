@@ -5,19 +5,25 @@ html {
     text-align: center;
 }
 
+.wrapper {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .name, .card-title {     
     font-family: 'Roboto', sans-serif;
 }
 
 .name {
-    margin-top: 1em;
-    font-size: 6em;
+    margin-top: 1rem;
+    font-size: 6rem;
 }
 
 .contacts {
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-    font-size: 2em;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .contacts li {
@@ -25,7 +31,7 @@ html {
 }
 
 .contacts li+li {
-    margin-left: 1em;
+    margin-left: 1rem;
 }
 
 a {
@@ -40,21 +46,22 @@ a {
 
  .about {
     width: 60%;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-left: 20%;
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
 }
 
 .projects {
-    margin-left: 12.5vw;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 75vw;
 }
 
 .card-container {
-    padding: 1em;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2em
+    gap: 2rem
 }
 
 .card {
@@ -64,13 +71,14 @@ a {
 
 .card-image {
     max-width: 100%;
+    height: 20rem;
 }
 
 .card-body {
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 .card-title {
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
