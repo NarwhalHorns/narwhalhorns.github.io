@@ -1,0 +1,64 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+h1, .card-title, .section-title {     
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.card-container {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.card {
+    width: 75%;
+    margin-left: 12.5%;
+    text-align: center;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.card-icon {
+    padding: 1em;
+}
+
+.card-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 0.5em;
+}
+
+.about {
+    display: grid;
+    gap: 5%;
+    padding: 5%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3em;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,15 @@
+body {
+  background-color: yellow;
+}
+main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bg-pink {
+  background-color: magenta;
+}
+
+.card {
+  width: 100%;
+}
