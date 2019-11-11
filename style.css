@@ -11,11 +11,8 @@ html {
     margin-right: auto;
 }
 
-.name, .card-title {     
-    font-family: 'Roboto', sans-serif;
-}
-
 .name {
+    font-family: 'Roboto', sans-serif;
     margin-top: 1rem;
     font-size: 6rem;
 }
@@ -79,6 +76,7 @@ html {
 }
 
 .card-title {
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
@@ -86,5 +84,4 @@ html {
 footer {
     background: #FFCFF0;
     padding: 1rem;
-    text-align: left;
 }
