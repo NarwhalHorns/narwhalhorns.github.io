@@ -17,15 +17,21 @@ a {
     margin-right: auto;
 }
 
+header {
+    padding-top: 30vh;
+    height: 70vh;
+    position: relative;
+}
+
 .name {
     font-family: 'Calibre Medium', sans-serif;
-    font-size: 6rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
 .contacts {
     margin-bottom: 10vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .contacts li {
@@ -42,13 +48,13 @@ a {
     text-shadow: 1px 1px 1px #FAB4F1;
  }
  
- a:hover {
+ .contacts a:hover {
     color: #FAB4F1;
     text-shadow: none;
  }
 
  .about {
-    font-size: 3rem;
+    font-size: 1.5rem;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -60,51 +66,71 @@ a {
     position: absolute;
     bottom: 0;
     text-align: center;
-    font-size: 2rem;
-}
-
-header {
-    padding-top: 30vh;
-    height: 70vh;
-    position: relative;
+    font-size: 1.5rem;
 }
 
 .projects {
-    margin-bottom: 1rem;
-}
-
-.card-container {
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem
 }
 
 .card {
-    box-shadow: 1px 1px 1px #B37FA3;
+    box-shadow: 3px 3px 3px #B37FA3;
     background-color: #FFCFF0;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+}
+
+.card:last-of-type {
+    margin-bottom: 0;
 }
 
 .card-image {
-    height: 28vw;
+    height: 50vw;
     width: 100%;
+    border-radius: inherit;
 }
 
 .card-image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .card-body {
-    padding: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
 }
 
 .card-title {
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
+
+.card-p {
+    margin-bottom: 0.5rem;
+}
+
+.links li {
+    display: inline-block;
+}
+
+.links li+li {
+    margin-left: 1rem;
+}
+
+.links a {
+    color: black;
+    transition: text-shadow 100ms, color 100ms;
+    text-shadow: 1px 1px 1px slategrey;
+ }
+ 
+ .links a:hover {
+    color: rgb(248, 112, 230);
+    text-shadow: none;
+ }
 
 footer {
     background: #FFCFF0;

@@ -11,7 +11,13 @@
 
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="stylesheet" href="styles/x-small.css">
+    <link rel="stylesheet" media="screen and (min-width: 586px)" href="styles/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/laptop.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/desktop.css">
+
     <title>James Mason | Developer</title>
   </head>
   
@@ -37,66 +43,58 @@
       </header>
 
       <div class="projects">
-        <div class="card-container">
-          <div class="card">
-            <div class="card-image">
-              <img class="card-image" src="images/site.png">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Site</h3>
-              <p class="class-p">The site your on lmao</p>
-              <ul>
-                <li><a><i class="fab fa-2x fa-github"></i></a></li>
-              </ul>
-            </div>
+        <div class="card">
+          <div class="card-image">
+            <img class="card-image" src="images/site.png">
           </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img class="card-image" src="images/piano.gif">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Air Piano</h3>
-              <p class="class-p">A piano made of air that you play simply by putting your hands where the keys represent.</p>
-              <ul class="links">
-                <li><a href="https://devpost.com/software/airstruments" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 24 24" style="fill:#000000;">
-                    <path d="M 6 2 L 0.625 12 L 6 22 L 18 22 L 23.457031 12 L 18 2 Z M 8 7 L 13.136719 7.007813 C 14.472656 7.195313 17 8.472656 17 12 C 17 15.527344 14.472656 16.804688 13.136719 16.988281 L 13.066406 17 L 8 17 Z M 10 9 L 10 15 L 12.914063 15 C 13.28125 14.925781 15 14.445313 15 12 C 15 9.566406 13.304688 9.078125 12.910156 9 Z"></path>
-                  </svg>
-                </a></li>
-              </ul>
-            </div>
+          <div class="card-body">
+            <h3 class="card-title">This Website</h3>
+            <p class="card-p">My own website designed and built by myself. A constant work in progress that shows some of my skills.</p>
           </div>
+        </div>
 
-          <div class="card">
-            <div class="card-image">
-              <img class="card-image" src="images/secret.jpg">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Secret Site</h3>
-              <p class="class-p"><a href="https://www.youtube.com/watch?v=gMUEFZXkmDA">It's a secret</a></p>
-              <!-- <li><a href=""><i class="fas fa-link"></i></a></li> -->
-            </div>
+        <div class="card">
+          <div class="card-image">
+            <img class="card-image" src="images/piano.gif">
           </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img class="card-image" src="images/" alt="Map Thing Dissertation">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Map Thing</h3>
-              <p class="class-p">My dissertation project. A map which you can track paths across and give associated timestamps along the path against a timeline. Playback would then show eveything moving along it's path in real time.</p>
-            </div>
+          <div class="card-body">
+            <h3 class="card-title">Air Piano</h3>
+            <p class="card-p">A piano made of air that you play simply by putting your hands where the keys represent.</p>
+            <ul class="links">
+              <li><a href="" target="_blank"><i class="fab fa-2x fa-github"></i></a></li>
+              <li><a href="https://devpost.com/software/airstruments" target="_blank"><i class="fas fa-2x fa-info"></i></a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="card">
-            <div class="card-image">
-              <img src="images/love2d.png">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Love 2D Programs</h3>
-              <p class="class-p">I used to make small programs and games in Love 2D which is a language based on Lua for making 2D games and such</p>
-            </div>
+        <div class="card">
+          <div class="card-image">
+            <img class="card-image" src="images/secret.jpg">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Secret Site</h3>
+            <p class="card-p"><a href="https://www.youtube.com/watch?v=gMUEFZXkmDA">It's a secret</a></p>
+            <!-- <li><a href=""><i class="fas fa-link"></i></a></li> -->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img class="card-image" src="images/" alt="Map Thing Dissertation">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Map Thing</h3>
+            <p class="card-p">My dissertation project. A map which you can track paths across and give associated timestamps along the path against a timeline. Playback would then show eveything moving along it's path in real time.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/love2d.png">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Love 2D Programs</h3>
+            <p class="card-p">I used to make small programs and games in Love 2D which is a language based on Lua for making 2D games and such</p>
           </div>
         </div>
       </div>
