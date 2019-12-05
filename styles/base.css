@@ -1,12 +1,13 @@
 html {
     font-family: 'Calibre Regular', sans-serif;
     line-height: 1.5;
-    background-color: #FCF9F8;
+    background-color: #09002d;
     text-align: center;
+    color: #ffffff;
 }
 
 a {
-    color: black;
+    color: #FAB4F1;
     text-decoration: none;
 }
 
@@ -43,15 +44,14 @@ header {
 }
 
 .contacts a {
-    color: #FDDEFA;
-    transition: text-shadow 100ms, color 100ms;
-    text-shadow: 1px 1px 1px #FAB4F1;
- }
- 
- .contacts a:hover {
     color: #FAB4F1;
+    transition: text-shadow 100ms, color 100ms;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+ 
+.contacts a:hover {
     text-shadow: none;
- }
+}
 
  .about {
     font-size: 1.5rem;
@@ -74,8 +74,8 @@ header {
 }
 
 .card {
-    box-shadow: 3px 3px 3px #B37FA3;
-    background-color: #FFCFF0;
+    box-shadow: 3px 3px 3px #FFFFFF;
+    background-color: #FAB4F1;
     margin-bottom: 1rem;
     border-radius: 7px;
 }
@@ -128,7 +128,7 @@ header {
  }
  
  .links a:hover {
-    color: rgb(248, 112, 230);
+    color: #D00EB7;
     text-shadow: none;
  }
 
