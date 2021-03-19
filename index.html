@@ -2,19 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="James Mason here, a software developer.">
+    <meta name="description" content="James Mason here, a software developer or maybe something else.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="styles/fa/css/fontawesome.min.css">
-    <link rel="stylesheet" href="styles/fa/css/brands.min.css">
-    <link rel="stylesheet" href="styles/fa/css/regular.min.css">
-    <link rel="stylesheet" href="styles/fa/css/solid.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/reset.css">
-
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" media="screen and (min-width: 586px)" href="styles/small.css">
+
+    <script src="https://kit.fontawesome.com/687703d46a.js" crossorigin="anonymous"></script>
 
     <title>James Mason | Developer</title>
   </head>
@@ -25,78 +23,79 @@
         <div id="splash">
           <p>Hi,</p>
           <h1 id="name">James Mason</h1>
-          <p>here.</p>
+          <p id="splash-here">here.</p>
         </div>
-
-        <p id="about">I am a Computer Science graduate from the University of Sheffield. Currently on the lookout for a graduate role in Software Engineering and Dsevelopment.</p>
-
-        <ul id="contacts">
-          <li><a href="https://github.com/NarwhalHorns" title="Github"><i class="fab fa-2x fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/justjamesmason/" title="Instagram"><i class="fab fa-2x fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i></a></li>
-          <li><a href="https://twitter.com/jamjarmason" title="Twitter"><i class="fab fa-2x fa-twitter"></i></a></li>
-          <li><a href="mailto:james@jamesmason.dev" title="Email"><i class="far fa-2x fa-envelope"></i></a></li>
-        </ul>
-
-        <div id="more">
-          Take a look at my featured projects!<br>
-          <i class="fas fa-2x fa-long-arrow-alt-down"></i>
+        <div id="tabs">
+          <h2 id="person-tab">The Person</h2>
+          <h2 id="project-tab">The  Projects</h2>         
         </div>
       </header>
-
-      <div class="projects">
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/site.png" alt="This Site">
+      <div id="person-and-projects">
+        <div id="projects" class="hidden">
+          <div class="card">
+            <div class="card-image">
+              <img class="card-image" src="images/site.png" alt="This website">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">This Website</h3>
+              <p class="card-p">My own website designed and built by myself. A constant work in progress that showcases my interests and past projects.</p>
+            </div>
           </div>
-          <div class="card-body">
-            <h3 class="card-title">This Website</h3>
-            <p class="card-p">My own website designed and built by myself. A constant work in progress that shows some of my skills.</p>
+
+          <div class="card">
+            <div class="card-image">
+              <img class="card-image" src="images/piano.gif" alt="Video of a hand playing the Air Piano">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Air Piano</h3>
+              <p class="card-p">A piano that you ccan play simply by putting your hands where the keys would be in the air. A collaborative project with a friend for HackSheffield 4.0 in 24 hours.</p>
+              <ul class="links">
+                <li><a href="https://devpost.com/software/airstruments" title="Devpost"><i class="fas fa-2x fa-info"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img class="card-image" src="images/secret.jpg" alt="This is a secret">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Secret Site</h3>
+              <p class="card-p">This is a website me and a few friends are working on that can not be shared yet as it will eventually be really funny for us.</p>
+              <p class="card-p"><a href="https://www.youtube.com/watch?v=gMUEFZXkmDA" title="Secret">It's a secret</a></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img class="card-image" src="images/TimeMap.jpg" alt="TimeMap Example">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">TimeMap | Dissertation</h3>
+              <p class="card-p">My dissertation project. A web app that allows a user to create a map and place things on it that change and travel over time. For example, I recreated the events of The Lord Of The Rings, showing Frodo and the Fellowship traveling across Middle Earth and all the stops they made on the journey.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img class="card-image" src="images/love2d.png" alt="Love 2D logo">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Love 2D Programs</h3>
+              <p class="card-p">When I was but a burgeoning developer in school I made small programs and games in Love 2D, which is a language based on Lua for making 2D games and such things. This was my first real foray into programming.</p>
+            </div>
           </div>
         </div>
+        <div id="person">
+          <p id="about">I am a Computer Science graduate from the University of Sheffield. Currently on the lookout for a graduate role in Software Engineering and Development or anything that will interest me moving forward.</p>
 
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/piano.gif" alt="Video of a hand playing the Air Piano">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Air Piano</h3>
-            <p class="card-p">A piano made of air that you play simply by putting your hands where the keys represent.</p>
-            <ul class="links">
-              <li><a href="" target="_blank" rel="noreferrer" title="Github"><i class="fab fa-2x fa-github"></i></a></li>
-              <li><a href="https://devpost.com/software/airstruments" target="_blank" rel="noreferrer" title="Devpost"><i class="fas fa-2x fa-info"></i></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/secret.jpg" alt="Secret... Shhh">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Secret Site</h3>
-            <p class="card-p"><a href="https://www.youtube.com/watch?v=gMUEFZXkmDA" title="Secret">It's a secret</a></p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/TimeMap.jpg" alt="TimeMap">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">TimeMap | Dissertation</h3>
-            <p class="card-p">My dissertation project. A map which you can track paths across and give associated timestamps along the path against a timeline. Playback would then show eveything moving along it's path in real time.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/love2d.png" alt="Love 2D logo">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Love 2D Programs</h3>
-            <p class="card-p">I used to make small programs and games in Love 2D which is a language based on Lua for making 2D games and such</p>
-          </div>
+          <ul id="contacts">
+            <li><a href="https://github.com/NarwhalHorns" title="Github"><i class="fab fa-2x fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/justjamesmason/" title="Instagram"><i class="fab fa-2x fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/jamjarmason" title="Twitter"><i class="fab fa-2x fa-twitter"></i></a></li>
+            <li><a href="mailto:james@jamesmason.dev" title="Email"><i class="far fa-2x fa-envelope"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>

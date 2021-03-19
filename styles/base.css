@@ -1,143 +1,59 @@
 html {
-    font-family: 'Calibre Regular', sans-serif;
-    background-color: #272530;
-    text-align: center;
-    color: #ffffff;
+    background-color: #FAEAF6;
 }
 
-a {
-    color: #FAB4F1;
-    text-decoration: none;
+body {
+    background-color: #FAEAF6;
 }
 
 #wrapper {
-    position: relative;
-    max-width: 70vw;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
-header {
-    height: 100vh;
-    position: relative;
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffdaf6;
 }
 
+/* HEADER */
+
 #splash {
-    padding-top: 10%;
-    font-size: 5rem;
+    width: 75%;
+    max-width: 15rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
 }
 
 #name {
-    font-family: 'Calibre Medium', sans-serif;
-    font-size: 7rem;
-}
-
-#contacts {
-    font-size: 1.5rem;
-}
-
-#contacts li {
-    display: inline;
-}
-
-#contacts li+li {
-    margin-left: 1rem;
-}
-
-#contacts a {
-    color: #FAB4F1;
-    text-shadow: none;
-    transition: text-shadow 100ms, color 100ms;
-}
- 
-#contacts a:hover {
-    text-shadow: 1px 1px 1px #ffdefb;
-}
-
-#contacts a:active {
-    text-shadow: none;
-}
-
-#about {
-    font-size: 1.5rem;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#more {
-    padding-bottom: 2rem;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
     text-align: center;
-    font-size: 1.5rem;
 }
 
-.projects {
+#splash-here {
+    text-align: right;
+}
+
+#tabs {
+    text-align: center;
+    display: flex;
+}
+
+#tabs h2 {
+    width: 50%;
+    flex: 1;
+}
+
+/* PERSON AND PROJECTS */
+
+#person-and-projects {
     padding: 1rem;
+    border: 1px solid black;
 }
 
-.card {
-    box-shadow: 3px 3px 3px #FFFFFF;
-    background-color: #FAB4F1;
-    margin-bottom: 1rem;
-    border-radius: 7px;
-}
-
-.card:last-of-type {
-    margin-bottom: 0;
-}
-
-.card-image {
-    height: 50vw;
-    width: 100%;
-    border-radius: inherit;
-}
-
-.card-image img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.card-body {
-    padding: 1rem;
-    font-size: 1rem;
-}
-
-.card-title {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.card-p {
-    margin-bottom: 0.5rem;
-}
-
-.links li {
-    display: inline-block;
-}
-
-.links li+li {
-    margin-left: 1rem;
-}
-
-.links a {
-    color: black;
-    transition: text-shadow 100ms, color 100ms;
-    text-shadow: 1px 1px 1px slategrey;
- }
- 
- .links a:hover {
-    color: #D00EB7;
-    text-shadow: none;
- }
-
-footer {
-    background: #FFCFF0;
-    padding: 1rem;
+.hidden {
+    display: none;
 }
