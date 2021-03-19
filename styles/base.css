@@ -1,7 +1,6 @@
 html {
     font-family: 'Calibre Regular', sans-serif;
-    line-height: 1.5;
-    background-color: #09002d;
+    background-color: #272530;
     text-align: center;
     color: #ffffff;
 }
@@ -11,56 +10,62 @@ a {
     text-decoration: none;
 }
 
-.wrapper {
+#wrapper {
     position: relative;
-    max-width: 50rem;
+    max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 header {
-    padding-top: 30vh;
-    height: 70vh;
+    height: 100vh;
     position: relative;
 }
 
-.name {
-    font-family: 'Calibre Medium', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+#splash {
+    padding-top: 10%;
+    font-size: 5rem;
 }
 
-.contacts {
-    margin-bottom: 10vh;
+#name {
+    font-family: 'Calibre Medium', sans-serif;
+    font-size: 7rem;
+}
+
+#contacts {
     font-size: 1.5rem;
 }
 
-.contacts li {
+#contacts li {
     display: inline;
 }
 
-.contacts li+li {
+#contacts li+li {
     margin-left: 1rem;
 }
 
-.contacts a {
+#contacts a {
     color: #FAB4F1;
+    text-shadow: none;
     transition: text-shadow 100ms, color 100ms;
-    text-shadow: 1px 1px 1px #FFFFFF;
 }
  
-.contacts a:hover {
+#contacts a:hover {
+    text-shadow: 1px 1px 1px #ffdefb;
+}
+
+#contacts a:active {
     text-shadow: none;
 }
 
- .about {
+#about {
     font-size: 1.5rem;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.more {
+#more {
     padding-bottom: 2rem;
     width: 100%;
     position: absolute;
