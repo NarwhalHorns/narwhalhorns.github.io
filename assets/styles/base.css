@@ -22,7 +22,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* HEADER */
@@ -93,6 +94,7 @@ h3 {
     background-color: wheat;
     display: inline-block;
     border-bottom: 1px solid black;
+    box-shadow: 2px 0px 0px 0px black;
 }
 
 .tab-open {
@@ -109,6 +111,7 @@ h3 {
 
 #person-projects-contents {
     background-color: wheat;
+    box-shadow: 2px 2px 1px 1px black;
     padding: 1rem;
 }
 
@@ -121,30 +124,48 @@ h3 {
 .page {
     background-color: white;
     padding: 1rem;
+    overflow: hidden;
 }
-
-
 
 #person > div:not(:first-child) {
     margin-top: 1rem;
-}
-
-#me {
-    width: 40%;
-    float: right;
-    margin-left: 5%;
 }
 
 #person-contacts > li:not(:first-child) {
     margin-top: 0.5rem;
 }
 
+#me {
+    width: 40%;
+    max-width: 200px;
+    float: right;
+    margin-left: 5%;
+}
+
+#hobbies li {
+    margin-top: 1rem;
+}
+
+#hobbies i {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+#skills li {
+    margin-top: 1rem;
+}
+
+#skills i {
+    float: left;
+    margin-right: 0.5rem;
+}
+
 .postit {
     margin-top: 20px;
     transform: rotate(5deg);
     font-family: 'Pangolin', cursive;
-    height: 260px;
     width: 260px;
+    margin-bottom: 20px;
 }
 
 .postit-head {
@@ -153,8 +174,10 @@ h3 {
 }
 
 .postit-content {
+    height: 200px;
     background-color: tomato;
     padding: 0.5rem;
+    box-shadow: 2px 2px 1px 1px black;
 }
 
 /* PROJECTS */
@@ -171,6 +194,7 @@ h3 {
 .project-image {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 /* FOOTER */
