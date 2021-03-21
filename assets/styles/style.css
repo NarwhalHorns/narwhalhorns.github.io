@@ -29,9 +29,9 @@ h3 {
 /* HEADER */
 
 #board-border {
-    background-color: wheat;
+    background-color: rgb(187, 158, 104);
     padding: 10px;
-    max-width: 20rem;
+    max-width: 400px;
     margin: auto;
     margin-top: 2rem;
     box-shadow: 2px 2px 10px 0px black;
@@ -39,8 +39,7 @@ h3 {
 }
 
 #board {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     font-family: 'Permanent Marker', cursive;
     background-color: white;
     border-radius: inherit;
@@ -91,13 +90,14 @@ h3 {
 }
 
 .tab {
-    background-color: wheat;
+    background-color: rgb(212, 185, 135);
     display: inline-block;
     border-bottom: 1px solid black;
     box-shadow: 2px 0px 0px 0px black;
 }
 
 .tab-open {
+    background-color: wheat;
     border-bottom: 1px solid wheat;
 }
 
@@ -124,7 +124,6 @@ h3 {
 .page {
     background-color: white;
     padding: 1rem;
-    overflow: hidden;
 }
 
 #person > div:not(:first-child) {
@@ -136,10 +135,12 @@ h3 {
 }
 
 #me {
-    width: 40%;
-    max-width: 200px;
-    float: right;
-    margin-left: 5%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#about {
+    overflow: hidden;
 }
 
 #hobbies li {
@@ -162,10 +163,11 @@ h3 {
 
 .postit {
     margin-top: 20px;
-    transform: rotate(5deg);
     font-family: 'Pangolin', cursive;
-    width: 260px;
     margin-bottom: 20px;
+    width: 115%;
+    transform: rotate(5deg);
+    max-width: 260px;
 }
 
 .postit-head {
@@ -174,7 +176,6 @@ h3 {
 }
 
 .postit-content {
-    height: 200px;
     background-color: tomato;
     padding: 0.5rem;
     box-shadow: 2px 2px 1px 1px black;
@@ -182,16 +183,23 @@ h3 {
 
 /* PROJECTS */
 
+#projects > ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .project {
     background-color: white;
     padding: 1rem;
 }
 
-#projects > div:not(:first-child) {
+#projects > ul > div:not(:first-child) {
     margin-top: 1rem;
 }
 
-.project-image {
+.project img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -201,19 +209,82 @@ h3 {
 
 footer {
     margin-top: 1rem;
-    display: flex;
     padding: 0.5rem;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #ffdaf6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-footer .contacts {
-    flex: 1;
-    text-align: right;
-}
 
 footer li {
     margin-left: 1%;
     display: inline;
+}
+
+footer p {
+    flex: 1;
+}
+
+footer .contacts {
+    text-align: right;
+    flex: 1;
+}
+
+@media screen and (min-width: 340px) {
+    footer {
+        flex-direction: row;
+    }
+
+    #me {
+        width: 40%;
+        float: right;
+        margin-left: 5%;
+        margin-bottom: 0;
+        max-width: 200px;
+    }
+
+    #board-content {
+        font-size: 1.75rem;
+    }
+    #name {
+        font-size: 2rem;    
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #projects > ul{
+        flex-direction: row;
+    }
+
+    .project {
+        width: 45%;
+    }
+
+    #board-content {
+        line-height: 3rem;
+    }
+
+    #board-border {
+        max-width: 400px;    
+    }
+
+    #board-content {
+        font-size: 2rem;
+    }
+    #name {
+        font-size: 2.25rem;    
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #wrapper {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
 }
