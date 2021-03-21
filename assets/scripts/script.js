@@ -5,6 +5,8 @@ $(document).ready(function () {
         if (active = "person") {
             $('#projects').removeClass('hidden')
             $('#person').addClass('hidden')
+            $('#project-tab').addClass('tab-open')
+            $('#person-tab').removeClass('tab-open')
             active = "projects"
         }
     })
@@ -13,6 +15,8 @@ $(document).ready(function () {
         if (active = "projects") {
             $('#person').removeClass('hidden')
             $('#projects').addClass('hidden')
+            $('#person-tab').addClass('tab-open')
+            $('#project-tab').removeClass('tab-open')
             active = "person"
         }
     })

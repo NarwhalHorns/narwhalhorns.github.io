@@ -1,5 +1,6 @@
 html {
     background-color: #FAEAF6;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,55 +13,183 @@ body {
     margin-right: auto;
 }
 
-footer {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #ffdaf6;
+.contacts a {
+    color: black;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
 }
 
 /* HEADER */
 
-#splash {
-    width: 75%;
+#board-border {
+    background-color: wheat;
+    padding: 10px;
+    max-width: 20rem;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 10px 0px black;
+    border-radius: 10px 10px;
+}
+
+#board {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Permanent Marker', cursive;
+    background-color: white;
+    border-radius: inherit;
+    box-shadow: inset 2px 2px 1px black;
+}
+
+#board-content {
     max-width: 15rem;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+#first-line {
+    display: flex;
+}
+
+#board .first-line {
+    flex: 1;
+}
+
+#smiley {
+    text-align: right;
 }
 
 #name {
     text-align: center;
+    font-size: 1.5rem;    
 }
 
-#splash-here {
+#board-here {
     text-align: right;
-}
-
-#tabs {
-    text-align: center;
-    display: flex;
-}
-
-#tabs h2 {
-    width: 50%;
-    flex: 1;
 }
 
 /* PERSON AND PROJECTS */
 
 #person-and-projects {
-    padding: 1rem;
-    border: 1px solid black;
+    padding-top: 1rem;
+}
+
+#tabs {
+    display: flex;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.tab-container {
+    flex: 1;
+    text-align: center;
+}
+
+.tab {
+    background-color: wheat;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+.tab-open {
+    border-bottom: 1px solid wheat;
+}
+
+.tab h2 {
+    padding: 0.5rem;
 }
 
 .hidden {
     display: none;
 }
 
+#person-projects-contents {
+    background-color: wheat;
+    padding: 1rem;
+}
+
+#person-projects-contents p {
+    margin-top: 0.5rem;
+}
+
+/* PERSON */
+
+.page {
+    background-color: white;
+    padding: 1rem;
+}
+
+
+
+#person > div:not(:first-child) {
+    margin-top: 1rem;
+}
+
+#me {
+    width: 40%;
+    float: right;
+    margin-left: 5%;
+}
+
+#person-contacts > li:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+.postit {
+    margin-top: 20px;
+    transform: rotate(5deg);
+    font-family: 'Pangolin', cursive;
+    height: 260px;
+    width: 260px;
+}
+
+.postit-head {
+    height: 30px;
+    background-color: rgb(255, 77, 45);
+}
+
+.postit-content {
+    background-color: tomato;
+    padding: 0.5rem;
+}
+
 /* PROJECTS */
+
+.project {
+    background-color: white;
+    padding: 1rem;
+}
+
+#projects > div:not(:first-child) {
+    margin-top: 1rem;
+}
 
 .project-image {
     width: 100%;
     height: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 1rem;
+    display: flex;
+    padding: 0.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffdaf6;
+}
+
+footer .contacts {
+    flex: 1;
+    text-align: right;
+}
+
+footer li {
+    margin-left: 1%;
+    display: inline;
 }
