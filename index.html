@@ -2,107 +2,202 @@
 <html lang="en" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="I am James Mason, a software developer.">
+    <meta name="description" content="James Mason here, a software developer or maybe something else.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/scripts/script.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="styles/fa/css/fontawesome.min.css">
-    <link rel="stylesheet" href="styles/fa/css/brands.min.css">
-    <link rel="stylesheet" href="styles/fa/css/regular.min.css">
-    <link rel="stylesheet" href="styles/fa/css/solid.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" media="screen and (min-width: 586px)" href="styles/small.css">
-    <!-- <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/tablet.css"> -->
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/laptop.css">
-    <!-- <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/desktop.css"> -->
+    <script src="https://kit.fontawesome.com/687703d46a.js" crossorigin="anonymous"></script>
 
     <title>James Mason | Developer</title>
   </head>
   
   <body>
-    <div class="wrapper">
+    <div id="wrapper">
       <header>
-        <h1 class="name">James Mason</h1>
-
-        <ul class="contacts">
-          <li><a href="https://github.com/NarwhalHorns" title="Github"><i class="fab fa-2x fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/justjamesmason/" title="Instagram"><i class="fab fa-2x fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i></a></li>
-          <li><a href="https://twitter.com/jamjarmason" title="Twitter"><i class="fab fa-2x fa-twitter"></i></a></li>
-          <li><a href="mailto:james@jamesmason.dev" title="Email"><i class="far fa-2x fa-envelope"></i></a></li>
-        </ul>
-
-        <p class="about">I am a Computer Science graduate from the University of Sheffield. Currently on the lookout for a graduate role in Software Engineering.</p>
-
-        <div class="more">
-          Take a look at my featured projects!<br>
-          <i class="fas fa-2x fa-long-arrow-alt-down"></i>
+        <div id="board-border">
+          <div id="board">
+            <div id="board-content">
+              <div id="first-line">
+                <p class="first-line">Hi,</p>
+                <p class="first-line" id="smiley">:)</p>
+              </div>
+              <h1 id="name">James Mason</h1>
+              <p id="board-here">here.</p>
+            </div>
+          </div>
         </div>
       </header>
-
-      <div class="projects">
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/site.png" alt="This Site">
+      <main>
+        <div id="person-and-projects">
+          <div id="tabs">
+            <div class="tab-container">
+              <div class="tab tab-open" id="person-tab">
+                <h2>The Person</h2>
+              </div>
+            </div>
+            <div class="tab-container">
+              <div class="tab" id="project-tab">
+                <h2>The Projects</h2>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <h3 class="card-title">This Website</h3>
-            <p class="card-p">My own website designed and built by myself. A constant work in progress that shows some of my skills.</p>
+          <div id="person-projects-contents">
+            <div id="person">
+              <div class="page" id="about">
+                <img id="me" src="assets/images/An actaully nice picture of me.jpg" alt="Yours truly">
+                <h3>Who am I?</h3>
+                <p>I am a Computer Science graduate from the University of Sheffield. Currently on the lookout for a graduate role in Software Engineering and Development or anything that will interest me moving forward.</p>
+              </div>
+
+              <div class="page">
+                <h3>What I like to do?</h3>
+                <p>Any other year I would have spent more of my time away from the computer doing other activites, but recent events have made that rare. But I have found things to do in the meantime.</p>
+                <ul id="hobbies">
+                  <li>
+                    <i class="fab fa-2x fa-d-and-d"></i>
+                    <div>I have been playing DnD for probably 10 years now and it is still the most interesting and inventive game I've ever seen and has allowed me and my friends to come up with out own immense stories that will stay with me.</div>
+                  </li>
+                  <li>
+                    <i class="fas fa-2x fa-book"></i>
+                    <div>In the last year I started reading books for something to do indoors for obvious reasons and discovered that I now really enjoy them. Now I enjoy sitting in a comfy armchair in my room with a nice coffee and diving into the pages.</div>
+                  </li>
+                  <li>
+                    <i class="fas fa-2x fa-hiking"></i>
+                    <div>When given the opportunity I absolutely love hiking and camping. Fresh air and lots of time to force you to do nothing but chat with friends while distracting by the landscape and terrain, perfection. And don't get me started on campfires.</div>
+                  </li>
+                  <li>
+                    <i class="fab fa-2x fa-imdb"></i>
+                    <div>I LOVE movies and TV. Pretty much anything and everything goes as long as it's entertaining. But nothing really beats Lord of The Rings for movies and I'd say Gravity Falls has the TV crown.</div>
+                  </li>
+                  <li>
+                    <i class="fas fa-2x fa-language"></i>
+                    <div>I am currently learning Japanese! Their culture and everything else has always interested me since watching Anime and the like. I would like to go out and live their at some point in my life and tour the whole country.</div>
+                  </li>
+                  <li>
+                    <i class="fas fa-2x fa-code"></i>
+                    <div>Obviously I love to code. Be it programs for school or university or personal projects to count the sources of my thousands of wallpapers, I enjoy it. Something about it just clicks with me and once I get into the flow I can honestly lose hours.</div>
+                  </li>
+                  <li>
+                    <i class="fab fa-2x fa-playstation"></i><i class="fab fa-2x fa-steam"></i>
+                    <div>Gaming has been a love of mine since I was but a wee boy. Having grown up with the industry I have seen the entire lives of franchises and fallen into their plots and music which have seriously shaped who I am now.</div>
+                  </li>                  
+                </ul>
+              </div>
+
+              <div class="page">
+                <h3>How do I do it?</h3>
+                <p>Now for the technical things I can do and perhaps a little about them.</p>
+                <ul id="skills">
+                  <li>
+                    <i class="fab fa-2x fa-html5"></i><i class="fab fa-2x fa-css3-alt"></i><i class="fab fa-2x fa-js"></i>
+                    <div>As you may be able to tell from this website, I can use HTML, CSS and JavaScript to make websites and web apps. I would also list some back-end frameworks but I have never settled on which ones.</div>
+                  </li>
+                  <li>
+                    <i class="fab fa-2x fa-python"></i>
+                    <div>Python can be used for a wide variety of things but I have mostly used it as a tool to make little useful things for myself. For example, since I have thousands of wallpapers that cycle on my PC, I lose track of them so I made a little program to count what each one is about and list them in a text file.</div>
+                  </li>
+                  <li>
+                    <i class="fab fa-2x fa-java"></i>
+                    <div>At first the class system of Java came naturally to me and over the years of learning other languages and practicing them I have come to think it is a little... much. But it works nicely!</div>
+                  </li>
+                  <li>
+                    <i class="fab fa-2x fa-github"></i>
+                    <div>What else can you use quite as well as GitHub to keep track of all your projects and see practically every other project on the internet that you can then assist with? You tell me.</div>
+                  </li>
+                  <li>
+                    <i class="fas fa-coffee"></i>
+                    <div>And a lot of coffee</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="page">
+                <h3>Where can you find me?</h3>
+                <p>Unsurprisingly, I spend a lot of time on the web, so I can be found all over. If you wanna see some of my work or get in contact, here are some options.</p>
+                <div class="postit">
+                  <div class="postit-head"></div>
+                  <div class="postit-content">
+                    <ul class="contacts" id="person-contacts">
+                      <li><a href="https://github.com/NarwhalHorns" title="Github"><i class="fab fa-2x fa-github"></i> NarwhalHorns</a></li>
+                      <li><a href="https://www.instagram.com/justjamesmason/" title="Instagram"><i class="fab fa-2x fa-instagram"></i> justjamesmason</a></li>
+                      <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i> James Mason</a></li>
+                      <li><a href="https://twitter.com/jamjarmason" title="Twitter"><i class="fab fa-2x fa-twitter"></i> @jamjarmason</a></li>
+                      <li><a href="mailto:james@jamesmason.dev" title="Email"><i class="far fa-2x fa-envelope"></i> james@jamesmason.dev</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="projects" class="hidden">
+              <ul>
+                <div class="project">
+                  <div>
+                    <img class="project-image" src="assets/images/site.png" alt="This website">
+                  </div>
+                  <h3 class="project-title">This Website</h3>
+                  <p class="project-desc">My own website designed and built by myself. A constant work in progress that showcases my interests and past projects.</p>
+                </div>
+
+                <div class="project">
+                  <div>
+                    <img class="project-image" src="assets/images/piano.gif" alt="video of a someone playing the Air Piano">
+                  </div>
+                  <h3 class="project-title">Air Piano</h3>
+                  <p class="project-desc">A piano that you ccan play simply by putting your hands where the keys would be in the air. A collaborative project with a friend for HackSheffield 4.0 in 24 hours.</p>
+                  <a href="https://devpost.com/software/airstruments" title="Devpost"><i class="fas fa-2x fa-info"></i></a>
+                </div>
+
+                <div class="project">
+                  <div>
+                    <img class="project-image" src="assets/images/secret.jpg" alt="This is a secret">
+                  </div>
+                    <h3 class="project-title">Secret Site</h3>
+                  <p class="project-desc">This is a website me and a few friends are working on that can not be shared yet as it will eventually be really funny for us.</p>
+                  <a href="https://www.youtube.com/watch?v=gMUEFZXkmDA" title="Secret">It's a secret</a>
+                </div>
+
+                <div class="project">
+                  <div>
+                    <img class="project-image" src="assets/images/TimeMap.jpg" alt="TimeMap Example">
+                  </div>
+                  <h3 class="project-title">TimeMap | Dissertation</h3>
+                  <p class="project-desc">My dissertation project. A web app that allows a user to create a map and place things on it that change and travel over time. For example, I recreated the events of The Lord Of The Rings, showing Frodo and the Fellowship traveling across Middle Earth and all the stops they made on the journey.</p>
+                </div>
+
+                <div class="project">
+                  <div>
+                    <img class="project-image" src="assets/images/love2d.png" alt="Love2D Logo">
+                  </div>
+                  <h3 class="project-title">Love 2D Programs</h3>
+                  <p class="project-desc">When I was but a burgeoning developer in school I made small programs and games in Love 2D, which is a language based on Lua for making 2D games and such things. This was my first real foray into programming.</p>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/piano.gif" alt="Video of a hand playing the Air Piano">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Air Piano</h3>
-            <p class="card-p">A piano made of air that you play simply by putting your hands where the keys represent.</p>
-            <ul class="links">
-              <li><a href="" target="_blank" rel="noreferrer" title="Github"><i class="fab fa-2x fa-github"></i></a></li>
-              <li><a href="https://devpost.com/software/airstruments" target="_blank" rel="noreferrer" title="Devpost"><i class="fas fa-2x fa-info"></i></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/secret.jpg" alt="Secret... Shhh">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Secret Site</h3>
-            <p class="card-p"><a href="https://www.youtube.com/watch?v=gMUEFZXkmDA" title="Secret">It's a secret</a></p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img class="card-image" src="images/TimeMap.jpg" alt="TimeMap">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">TimeMap | Dissertation</h3>
-            <p class="card-p">My dissertation project. A map which you can track paths across and give associated timestamps along the path against a timeline. Playback would then show eveything moving along it's path in real time.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="images/love2d.png" alt="Love 2D logo">
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Love 2D Programs</h3>
-            <p class="card-p">I used to make small programs and games in Love 2D which is a language based on Lua for making 2D games and such</p>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
     <footer>
       <p>James Mason &#169; 2021</p>
+      <ul class="contacts">
+        <li><a href="https://github.com/NarwhalHorns" title="Github"><i class="fab fa-lg fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/justjamesmason/" title="Instagram"><i class="fab fa-lg fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" title="LinkedIn"><i class="fab fa-lg fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/jamjarmason" title="Twitter"><i class="fab fa-lg fa-twitter"></i></a></li>
+        <li><a href="mailto:james@jamesmason.dev" title="Email"><i class="far fa-lg fa-envelope"></i></a></li>
+      </ul>
     </footer>
   </body>
 </html>
