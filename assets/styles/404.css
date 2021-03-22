@@ -1,0 +1,29 @@
+html {
+    text-align: center;
+    background-color: #FAEAF6;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: black;
+}
+
+li {
+    display: inline;
+}
+
+li:not(:first-of-type) {
+    margin-left: 0.5rem;
+}
+
+#home {
+    margin-top: 5%;
+}
+
+#contact {
+    margin-top: 5%;
+}

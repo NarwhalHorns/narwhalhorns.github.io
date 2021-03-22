@@ -218,7 +218,6 @@ footer {
     flex-wrap: wrap;
 }
 
-
 footer li {
     margin-left: 1%;
     display: inline;
@@ -232,6 +231,8 @@ footer .contacts {
     text-align: right;
     flex: 1;
 }
+
+/* MEDIA CHANGES */
 
 @media screen and (min-width: 340px) {
     footer {
@@ -283,8 +284,4 @@ footer .contacts {
     #wrapper {
         max-width: 1000px;
     }
-}
-
-@media screen and (min-width: 1280px) {
-
 }
