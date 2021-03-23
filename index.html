@@ -43,18 +43,18 @@
         <div id="person-and-projects">
           <div id="tabs">
             <div class="tab-container">
-              <div class="tab tab-open" id="person-tab">
+              <div class="tab" id="person-tab">
                 <h2>The Person</h2>
               </div>
             </div>
             <div class="tab-container">
-              <div class="tab" id="project-tab">
+              <div class="tab tab-open" id="project-tab">
                 <h2>The Projects</h2>
               </div>
             </div>
           </div>
           <div id="person-projects-contents">
-            <div id="person">
+            <div id="person" class="hidden">
               <div class="page" id="about">
                 <img id="me" src="assets/images/An actaully nice picture of me.jpg" alt="Yours truly">
                 <h3>Who am I?</h3>
@@ -130,57 +130,202 @@
                   <div class="postit-head"></div>
                   <div class="postit-content">
                     <ul class="contacts" id="person-contacts">
-                      <li><a href="https://github.com/NarwhalHorns" title="Github"><i class="fab fa-2x fa-github"></i> NarwhalHorns</a></li>
-                      <li><a href="https://www.instagram.com/justjamesmason/" title="Instagram"><i class="fab fa-2x fa-instagram"></i> justjamesmason</a></li>
-                      <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i> James Mason</a></li>
-                      <li><a href="https://twitter.com/jamjarmason" title="Twitter"><i class="fab fa-2x fa-twitter"></i> @jamjarmason</a></li>
-                      <li><a href="mailto:james@jamesmason.dev" title="Email"><i class="far fa-2x fa-envelope"></i> james@jamesmason.dev</a></li>
+                      <li><a href="https://github.com/NarwhalHorns" target="_blank" title="Github"><i class="fab fa-2x fa-github"></i>NarwhalHorns</a></li>
+                      <li><a href="https://www.instagram.com/justjamesmason/" target="_blank" title="Instagram"><i class="fab fa-2x fa-instagram"></i>justjamesmason</a></li>
+                      <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" target="_blank" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i>James Mason</a></li>
+                      <li><a href="https://twitter.com/jamjarmason" target="_blank" title="Twitter"><i class="fab fa-2x fa-twitter"></i>@jamjarmason</a></li>
+                      <li><a href="mailto:james@jamesmason.dev" target="_blank" title="Email"><i class="far fa-2x fa-envelope"></i>james@jamesmason.dev</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="projects" class="hidden">
+            <div id="projects">
+              <p>Here's many of the projects I've worked on, click each one for more information.</p>
               <ul>
-                <div class="project">
-                  <div>
+                <div class="modal" id="this-site">
+                  <div class="modal-overlay" id="this-site"></div>
+                  <div class="modal-card">
+                    <div class="modal-close" id="this-site"><i class="fas fa-lg fa-times"></i></div>
+                    <div class="modal-top">
+                      <div class="image-container">
+                        <img class="modal-image" src="assets/images/site.png" alt="This website">
+                      </div>
+                      <div class="modal-info">
+                        <h3>This Website</h3>
+                        <div>Ongoing</div>
+                        <p class="modal-desc">My own website designed and built by myself. A constant work in progress that showcases my interests and past projects.</p>
+                        <ul>
+                          <li><a href="https://github.com/NarwhalHorns/narwhalhorns.github.io" target="_blank" title="Github Repository"><i class="fab fa-lg fa-github"></i>GitHub Repository</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="modal-bottom">
+                      <h4>Some things used</h4>
+                      <ul class="modal-skills">
+                        <li><i class="fab fa-2x fa-github"></i>Github</li>
+                        <li><i class="fab fa-2x fa-html5"></i>HTML</li>
+                        <li><i class="fab fa-2x fa-css3-alt"></i>CSS</li>
+                        <li><i class="fab fa-2x fa-js"></i>JavaScript</li>
+                        <li><i class="fab fa-2x fa-font-awesome"></i>Font Awesome</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="project" id="this-site">
+                  <div class="image-container">
                     <img class="project-image" src="assets/images/site.png" alt="This website">
                   </div>
-                  <h3 class="project-title">This Website</h3>
+                  <div class="info-line">
+                    <h3 class="project-title">This Website</h3>
+                    <div class="project-date">Ongoing</div>
+                  </div>
                   <p class="project-desc">My own website designed and built by myself. A constant work in progress that showcases my interests and past projects.</p>
                 </div>
-
-                <div class="project">
-                  <div>
-                    <img class="project-image" src="assets/images/piano.gif" alt="video of a someone playing the Air Piano">
+                <div class="modal" id="air-piano">
+                  <div class="modal-overlay" id="air-piano"></div>
+                  <div class="modal-card">
+                    <div class="modal-close" id="air-piano"><i class="fas fa-lg fa-times"></i></div>
+                    <div class="modal-top">
+                      <div class="image-container">
+                        <img class="modal-image" src="assets/images/piano.gif" alt="Air Piano Demonstration">
+                      </div>
+                      <div class="modal-info">
+                        <h3>Air Piano</h3>
+                        <div>Oct 2018</div>
+                        <p class="modal-desc">A piano that you ccan play simply by putting your hands where the keys would be in the air. A collaborative project with a friend for HackSheffield 4.0 in 24 hours.</p>
+                        <ul>
+                          <li><a href="https://devpost.com/software/airstruments" target="_blank" title="Devpost"><i class="fas fa-lg fa-info"></i>DevPost</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="modal-bottom">
+                      <h4>Some things used</h4>
+                      <ul class="modal-skills">
+                        <li><i class="fab fa-2x fa-github"></i>Github</li>
+                        <li><i class="fas fa-2x fa-code"></i>PureData</li>
+                        <li><i class="fas fa-2x fa-microchip"></i>Arduino</li>
+                      </ul>
+                    </div>
                   </div>
-                  <h3 class="project-title">Air Piano</h3>
+                </div>
+                <div class="project" id="air-piano">
+                  <div class="image-container">
+                    <img class="project-image" src="assets/images/piano.gif" alt="Air Piano Demonstration">
+                  </div>
+                  <div class="info-line">
+                    <h3 class="project-title">Air Piano</h3>
+                    <div class="project-date">Oct 2018</div>
+                  </div>
                   <p class="project-desc">A piano that you ccan play simply by putting your hands where the keys would be in the air. A collaborative project with a friend for HackSheffield 4.0 in 24 hours.</p>
-                  <a href="https://devpost.com/software/airstruments" title="Devpost"><i class="fas fa-2x fa-info"></i></a>
                 </div>
 
-                <div class="project">
-                  <div>
+                <div class="modal" id="secret-site">
+                  <div class="modal-overlay" id="secret-site"></div>
+                  <div class="modal-card">
+                    <div class="modal-close" id="secret-site"><i class="fas fa-lg fa-times"></i></div>
+                    <div class="modal-top">
+                      <div class="image-container">
+                        <img class="modal-image" src="assets/images/secret.jpg" alt="This is a secret">
+                      </div>
+                      <div class="modal-info">
+                        <h3>Secret Site</h3>
+                        <div>Ongoing</div>
+                        <p class="modal-desc">A piano that you ccan play simply by putting your hands where the keys would be in the air. A collaborative project with a friend for HackSheffield 4.0 in 24 hours.</p>
+                        <ul>
+                          <li><a href="https://www.youtube.com/watch?v=gMUEFZXkmDA" target="_blank" title="Secret"><i class="fas fa-question"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="modal-bottom">
+                      <h4>Some things used</h4>
+                      <ul class="modal-skills">
+                        <li><i class="fab fa-2x fa-github"></i>Github</li>
+                        <li><i class="fab fa-2x fa-html5"></i>HTML</li>
+                        <li><i class="fab fa-2x fa-css3-alt"></i>CSS</li>
+                        <li><i class="fab fa-2x fa-js"></i>JavaScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="project" id="secret-site">
+                  <div class="image-container">
                     <img class="project-image" src="assets/images/secret.jpg" alt="This is a secret">
                   </div>
+                  <div class="info-line">
                     <h3 class="project-title">Secret Site</h3>
+                    <div class="project-date">Ongoing</div>
+                  </div>
                   <p class="project-desc">This is a website me and a few friends are working on that can not be shared yet as it will eventually be really funny for us.</p>
-                  <a href="https://www.youtube.com/watch?v=gMUEFZXkmDA" title="Secret">It's a secret</a>
+                  <a href="https://www.youtube.com/watch?v=gMUEFZXkmDA" target="_blank" title="Secret">It's a secret</a>
                 </div>
 
-                <div class="project">
-                  <div>
+                <div class="modal" id="time-map">
+                  <div class="modal-overlay" id="time-map"></div>
+                  <div class="modal-card">
+                    <div class="modal-close" id="time-map"><i class="fas fa-lg fa-times"></i></div>
+                    <div class="modal-top">
+                      <div class="image-container">
+                        <img class="modal-image" src="assets/images/TimeMap.jpg" alt="TimeMap Example">
+                      </div>
+                      <div class="modal-info">
+                        <h3>Time Map | Dissertation</h3>
+                        <div>May 2019</div>
+                        <p class="modal-desc">My dissertation project. A web app that allows a user to create a map and place things on it that change and travel over time. For example, I recreated the events of The Lord Of The Rings, showing Frodo and the Fellowship traveling across Middle Earth and all the stops they made on the journey.</p>
+                      </div>
+                    </div>
+                    <div class="modal-bottom">
+                      <h4>Some things used</h4>
+                      <ul class="modal-skills">
+                        <li><i class="fab fa-2x fa-github"></i>Github</li>
+                        <li><i class="fab fa-2x fa-html5"></i>HTML</li>
+                        <li><i class="fab fa-2x fa-css3-alt"></i>CSS</li>
+                        <li><i class="fab fa-2x fa-js"></i>JavaScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="project" id="time-map">
+                  <div class="image-container">
                     <img class="project-image" src="assets/images/TimeMap.jpg" alt="TimeMap Example">
                   </div>
-                  <h3 class="project-title">TimeMap | Dissertation</h3>
+                  <div class="info-line">
+                    <h3 class="project-title">Time Map</h3>
+                    <div class="project-date">May 2019</div>
+                  </div>
                   <p class="project-desc">My dissertation project. A web app that allows a user to create a map and place things on it that change and travel over time. For example, I recreated the events of The Lord Of The Rings, showing Frodo and the Fellowship traveling across Middle Earth and all the stops they made on the journey.</p>
                 </div>
 
-                <div class="project">
-                  <div>
+                <div class="modal" id="love2d">
+                  <div class="modal-overlay" id="love2d"></div>
+                  <div class="modal-card">
+                    <div class="modal-close" id="love2d"><i class="fas fa-lg fa-times"></i></div>
+                    <div class="modal-top">
+                      <div class="image-container">
+                        <img class="modal-image" src="assets/images/love2d.png" alt="Love2D Logo">
+                      </div>
+                      <div class="modal-info">
+                        <h3>Love 2D</h3>
+                        <div>Years Ago...</div>
+                        <p class="modal-desc">When I was but a burgeoning developer in school I made small programs and games in Love 2D, which is a language based on Lua for making 2D games and such things. This was my first real foray into programming.</p>
+                      </div>
+                    </div>
+                    <div class="modal-bottom">
+                      <h4>Some things used</h4>
+                      <ul class="modal-skills">
+                        <li><i class="fas fa-2x fa-code"></i>Lua</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="project" id="love2d">
+                  <div class="image-container">
                     <img class="project-image" src="assets/images/love2d.png" alt="Love2D Logo">
                   </div>
-                  <h3 class="project-title">Love 2D Programs</h3>
+                  <div class="info-line">
+                    <h3 class="project-title">Love 2D</h3>
+                    <div class="project-date">Years Ago...</div>
+                  </div>
                   <p class="project-desc">When I was but a burgeoning developer in school I made small programs and games in Love 2D, which is a language based on Lua for making 2D games and such things. This was my first real foray into programming.</p>
                 </div>
               </ul>
@@ -192,11 +337,11 @@
     <footer>
       <p>James Mason &#169; 2021</p>
       <ul class="contacts">
-        <li><a href="https://github.com/NarwhalHorns" title="Github"><i class="fab fa-lg fa-github"></i></a></li>
-        <li><a href="https://www.instagram.com/justjamesmason/" title="Instagram"><i class="fab fa-lg fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" title="LinkedIn"><i class="fab fa-lg fa-linkedin"></i></a></li>
-        <li><a href="https://twitter.com/jamjarmason" title="Twitter"><i class="fab fa-lg fa-twitter"></i></a></li>
-        <li><a href="mailto:james@jamesmason.dev" title="Email"><i class="far fa-lg fa-envelope"></i></a></li>
+        <li><a href="https://github.com/NarwhalHorns" title="Github" target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/justjamesmason/" target="_blank" title="Instagram"><i class="fab fa-lg fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/james-mason-b93173134/" target="_blank" title="LinkedIn"><i class="fab fa-lg fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/jamjarmason" target="_blank" title="Twitter"><i class="fab fa-lg fa-twitter"></i></a></li>
+        <li><a href="mailto:james@jamesmason.dev" target="_blank" title="Email"><i class="far fa-lg fa-envelope"></i></a></li>
       </ul>
     </footer>
   </body>
