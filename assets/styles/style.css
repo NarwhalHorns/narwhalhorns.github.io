@@ -244,7 +244,7 @@ h3 {
 .modal-overlay {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
@@ -261,6 +261,7 @@ h3 {
 
 .modal-top {
     display: flex;
+    flex-direction: column;
 }
 
 .modal-card .image-container {
@@ -390,6 +391,10 @@ footer .contacts {
     }
     #name {
         font-size: 2.25rem;    
+    }
+
+    .modal-top {
+        flex-direction: row;
     }
 }
 
