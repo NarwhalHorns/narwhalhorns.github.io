@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var active = "projects";
+    var active = "person";
 
     $('#project-tab').click(function() {
         if (active = "person") {
