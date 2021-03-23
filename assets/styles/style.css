@@ -26,7 +26,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* HEADER */
+/* BOARD */
 
 #board-border {
     background-color: rgb(187, 158, 104);
@@ -130,9 +130,7 @@ h3 {
     margin-top: 1rem;
 }
 
-#person-contacts > li:not(:first-child) {
-    margin-top: 0.5rem;
-}
+/* ABOUT */
 
 #me {
     width: 100%;
@@ -143,23 +141,52 @@ h3 {
     overflow: hidden;
 }
 
-#hobbies li {
+/* HOBBIES AND SKILLS */
+
+#hobbies, #skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 1rem;
+    position: relative;
 }
 
-#hobbies i {
-    float: left;
-    margin-right: 0.5rem;
+.hobby, .skill {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: white;
 }
 
-#skills li {
-    margin-top: 1rem;
+.hobby-info, .skill-info {
+    margin-top: 0.5rem;
 }
 
-#skills i {
-    float: left;
-    margin-right: 0.5rem;
+.hobby-title, .skill-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
+
+.hobby-open, .skill-open {
+    order: 1
+}
+
+#skills {
+    margin-bottom: 1rem;
+}
+
+#coffee {
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+#coffee i {
+    margin-left: 0.5rem;
+}
+
+/* POSTIT */
 
 .postit {
     margin-top: 20px;
@@ -183,6 +210,10 @@ h3 {
 
 .postit i {
     margin-right: 0.5rem;
+}
+
+#person-contacts > li:not(:first-child) {
+    margin-top: 0.5rem;
 }
 
 /* PROJECTS */
@@ -371,6 +402,29 @@ footer .contacts {
     #name {
         font-size: 2rem;    
     }
+
+    .hobby-content, .skill-content {
+        display: flex;
+    }
+    
+    .hobby-info, .skill-info {
+        margin-top: 0;
+        margin-left: 0.5rem;
+    }
+
+    .vertical {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .vertical i {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .vertical > i:not(:first-child) {
+        margin-top: 0.5rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -403,6 +457,12 @@ footer .contacts {
 
     .modal-card {
         margin-top: 10rem;
+    }
+
+    .hobby-open, .skill-open {
+        order: 0;
+        flex: 1;
+        max-width: 350px;
     }
 }
 
