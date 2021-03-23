@@ -251,12 +251,15 @@ h3 {
 
 .modal-card {
     position: relative;
-    left: 12.5%;
-    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     border-radius: 5px;
+    max-width: 900px;
     width: 75%;
     padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .modal-top {
@@ -267,6 +270,7 @@ h3 {
 .modal-card .image-container {
     flex: 1;
     border: 1px solid grey;
+    max-height: 300px;
 }
 
 .modal-image {
@@ -395,6 +399,10 @@ footer .contacts {
 
     .modal-top {
         flex-direction: row;
+    }
+
+    .modal-card {
+        margin-top: 10rem;
     }
 }
 
